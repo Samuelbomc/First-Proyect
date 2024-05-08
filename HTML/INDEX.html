@@ -2,30 +2,111 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Firts Web</title>
+        <title>First Web</title>
         <meta name="description" content="Esta web es la primera de muchas">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/BOOTSTRAP.min.css">
-        <link rel="stylesheet" href="./css/STYLES.css">
-        <link rel="stylesheet" href="./css/FONT-AWESOME.min.css">
+
+        <script src="https://kit.fontawesome.com/43a7bafb95.js" crossorigin="anonymous"></script>
+
+        <!--Estilos CSS-->
+        <link rel="stylesheet" href="../CSS/BOOTSTRAP.min.css">
+        <link rel="stylesheet" href="../CSS/STYLES.css">
+        <link rel="stylesheet" href="../CSS/FONT-AWESOME.min.css">
+
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css'>
         <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
         <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.2.0/css/all.css'>
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700'>
-        <script type="text/javascript" src="./js/BOOTSTRAP.min.js"></script>
-        <script type="text/javascript" src="./js/JQUERY.min.js"></script>
-        <script type="text/javascript" src="./js/POPPER.min.js"></script>
-        <script type="text/javascript" src="./js/FUNCTION.js"></script>
+
+        <!--Funcionalidades-->
+        <script type="text/javascript" src="../JS/BOOTSTRAP.min.js"></script>
+        <script type="text/javascript" src="../JS/JQUERY.min.js"></script>
+        <script type="text/javascript" src="../JS/POPPER.min.js"></script>
+        <script type="text/javascript" src="../JS/FUNCTION.js"></script>
     </head> 
     <body oncontextmenu="return false" class="snippet-body">
         <div class="options">
-            <div class="options active">
-                <h1>Hola</h1>
+            <div class="option active" style="--optionBackground:url('../IMAGES/Medellín.jpeg');">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Medellín</div>
+                        <div class="sub">Capital de Antioquia</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="option" style="--optionBackground:url('../IMAGES/Bucaramanga.jpg');">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Bucaramanga</div>
+                        <div class="sub">Capital de Santander</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="option" style="--optionBackground:url('../IMAGES/Barranquilla.jpg');">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Barranquilla</div>
+                        <div class="sub">Capital de Atlántico</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="option" style="--optionBackground:url('../IMAGES/Cartagena.jpg');">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Cartagena</div>
+                        <div class="sub">Capital de Bolívar</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="option" style="--optionBackground:url('../IMAGES/Cali.jpg');">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Cali</div>
+                        <div class="sub">Capital de Valle del Cauca</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="option" style="--optionBackground:url('../IMAGES/Bogotá.jpeg');">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Bogotá</div>
+                        <div class="sub">Capital de Colombia</div>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -33,6 +114,10 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         [endif]-->
         
-        <script src="" async defer></script>
+        <script type='text/javascript'>
+            $(".option").click(function () {
+               $(".option").removeClass("active");
+               $(this).addClass("active");
+        });</script>
     </body>
 </html>
