@@ -170,8 +170,8 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-width: 40px;
-    max-width: 40px;
+    min-width: 400px;
+    max-width: 400px;
     height: 40px;
     border-radius: 100%;
     background-color: white;
